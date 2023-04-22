@@ -1,0 +1,17 @@
+{
+  "name": "vanilla-ts",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/main.js"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.13",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
+  }
+}
